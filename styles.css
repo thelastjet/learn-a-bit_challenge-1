@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(./images/mountains.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  margin: 0.5rem;
+}
+
+.logo a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+  display: block;
+}
+
+.navbar-links li:hover {
+  background-color: lightgreen;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+.header {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10%;
+  margin-left: 2rem;
+}
+
+.info {
+  display: block;
+  width: 35%;
+  overflow-wrap: normal;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  background-color: gray;
+  opacity: 0.75;
+}
+
+.button {
+  background-color: lightgreen;
+  color: black;
+  padding: 1rem;
+  font-size: larger;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+button:hover {
+  background-color: green;
+}
+
+.logo a:hover {
+  color: green;
+}
