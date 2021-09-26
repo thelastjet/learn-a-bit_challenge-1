@@ -14,15 +14,21 @@
 }
 
 body,
-.photoBody {
+.photoBody,
+.reviewBody {
   animation: fadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .photoBody,
-.pricingBody {
-  background-color: rgb(158, 114, 64);
+.pricingBody,
+.reviewBody {
+  background-image: url(./images/blueBackground.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @keyframes fadeIn {
@@ -180,7 +186,8 @@ body,
 }
 
 .photoH1,
-.pricingH1 {
+.pricingH1,
+.reviewsH1 {
   font-size: 60px !important;
   width: 100%;
   text-align: center;
@@ -205,7 +212,7 @@ body,
 
 .photos:hover {
   border: solid lightgreen 3px;
-  transform: scale(1.3);
+  transform: scale(1.2);
   z-index: 999;
 }
 
@@ -216,6 +223,15 @@ body,
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+
+#dollarSign {
+  color: lightgreen;
+}
+
+.checked,
+.fa-star-half-o {
+  color: lightgreen;
 }
 
 #order {
@@ -265,4 +281,49 @@ body,
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
+}
+
+#reviewsSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reviews {
+  background-color: lightslategrey;
+  width: 600px;
+  height: fit-content;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 15px;
+}
+
+.reviews:hover {
+  transform: scale(1.2);
+  border: solid lightgreen 2px;
+}
+
+#reviewerIcon1 {
+  content: url("https://img.icons8.com/doodle/48/000000/walter-white.png");
+  float: left;
+  margin-right: 15px;
+}
+
+#reviewerIcon2 {
+  content: url("https://img.icons8.com/doodle/48/000000/homer-simpson.png");
+  float: left;
+  margin-right: 15px;
+}
+
+#reviewerIcon3 {
+  content: url("https://img.icons8.com/doodle/48/000000/iron-man.png");
+  float: left;
+  margin-right: 15px;
+}
+
+#reviewerIcon4 {
+  content: url("https://img.icons8.com/doodle/48/000000/scream.png");
+  float: left;
+  margin-right: 15px;
 }
