@@ -15,7 +15,8 @@
 
 body,
 .photoBody,
-.reviewBody {
+.reviewBody,
+.contactBody {
   animation: fadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -225,10 +226,6 @@ body,
   align-items: center;
 }
 
-#dollarSign {
-  color: lightgreen;
-}
-
 .checked,
 .fa-star-half-o {
   color: lightgreen;
@@ -254,6 +251,7 @@ body,
 
 .pricing:hover {
   transform: scale(1.2);
+  border: solid lightgreen 3px;
 }
 
 #priceLine1 {
@@ -271,6 +269,15 @@ body,
 }
 
 #orderNowButton {
+  display: none;
+}
+
+.pricing:hover #dollarSign {
+  color: lightgreen;
+}
+
+.pricing:hover #orderNowButton {
+  display: inline;
   background-color: lightgreen;
   font-weight: bolder;
   font-size: larger;
