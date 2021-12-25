@@ -11,24 +11,33 @@
     <section id="contactSection">
       <img
         src="./images/Selfie.jpg"
-        alt="man with long hair, beard, and mustache holding a camera taking a picture of himself"
+        alt="woman with long light-brown hair wearing a snow hat holding a camera taking a selfie"
       />
-      <h1 id="header">John Doe</h1>
+      <h1 id="header">Jane Doe</h1>
       <p id="info">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit, quod
         quasi esse laudantium non tempora dolorum doloremque nisi, aliquam
         inventore quis aut id earum quia deleniti, quo obcaecati expedita animi!
       </p>
-      <input id="name" type="text" placeholder="John Doe" required />
+    </section>
+    <form>
+      <label for="name">Name: </label>
+      <input id="name" type="text" placeholder="Jane Doe" required />
+      <label for="email">Email: </label>
       <input
-        id="Email"
+        id="email"
         type="text"
-        placeholder="john_doe@whatever.email.com"
+        placeholder="jane_doe@whatever.email.com"
         required
       />
-      <textarea id="message" type="text" placeholder="message"></textarea>
-      <button id="submitBtn">Submit</button>
-    </section>
+      <div>
+        <label for="message">Message: </label>
+        <textarea id="message" type="text" placeholder="message"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Submit" id="submitBtn" />
+      </div>
+    </form>
     <nav id="contactNavbar">
       <div class="logo">
         <h1>
